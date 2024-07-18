@@ -31,14 +31,14 @@ job_flow_overrides = {
                 "Name": "Master node",
                 "Market": "ON_DEMAND",
                 "InstanceRole": "MASTER",
-                "InstanceType": "m4.large",
+                "InstanceType": "t3.xlarge",
                 "InstanceCount": 1,
             },
             {
                 "Name": "Core node",
                 "Market": "ON_DEMAND", # Spot instances are a "use as available" instances
                 "InstanceRole": "CORE",
-                "InstanceType": "m4.large",
+                "InstanceType": "t3.xlarge",
                 "InstanceCount": 1
             },
         ],
