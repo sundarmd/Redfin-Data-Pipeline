@@ -3,7 +3,7 @@ from pyspark.sql.functions import *
 
 spark = SparkSession.builder.appName("RedfinDataAnalysis").getOrCreate()
 
-def transform_date():
+def transform_data():
     raw_data_s3_bucket = "s3://sundar28/store-raw-data-yml/city_market_tracker.tsv000.gz"
     transform_data_s3_bucket = "s3://sundar28/redfin-transform-zone-yml/redfin_data.parquet"
     
@@ -35,4 +35,4 @@ def transform_date():
 
     df_redfin.write.mode("overwrite").parquet(transform_data_s3_bucket)
 
-transform_date()
+transform_data()
