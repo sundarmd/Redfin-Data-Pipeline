@@ -1,7 +1,9 @@
 # Redfin Data Analytics Pipeline
 
 This pipeline processes about 49 Million records sourced from Redfin
+
 It is : 
+
 1. Scalable
 
 ### Architecture
